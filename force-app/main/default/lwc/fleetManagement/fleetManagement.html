@@ -1,0 +1,16 @@
+<template>
+    <div class="slds-grid slds-gutters color slds-m-horizontal_xxx-small">
+        <div class="slds-col slds-size_2-of-3">
+            <lightning-layout horizontal-align="center" multiple-rows>
+                <template for:each={buses} for:item="bus">
+                    <lightning-layout-item key={bus.busRecord.Id} padding="around-small" size="12" small-device-size="6" medium-device-size="4" large-device-size="3">
+                        <c-bus-tile bus-data={bus} onbusselect={selectBus} selected-bus-id={selectedBus}></c-bus-tile>
+                    </lightning-layout-item>
+                </template>
+            </lightning-layout> 
+        </div>
+        <div class="slds-col slds-size_1-of-3">
+          <c-bus-details record-id={selectedBus}></c-bus-details>
+        </div>
+    </div>
+</template>

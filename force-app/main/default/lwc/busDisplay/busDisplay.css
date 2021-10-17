@@ -1,0 +1,6 @@
+.tileClass {
+    border: 2px solid grey;
+    border-radius: 5px;
+    height: 250px;
+    cursor: pointer;
+}

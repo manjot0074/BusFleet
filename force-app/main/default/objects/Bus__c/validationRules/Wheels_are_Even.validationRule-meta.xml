@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wheels_are_Even</fullName>
+    <active>true</active>
+    <errorConditionFormula>(Number_of_Wheels__c  / 2)  = 1</errorConditionFormula>
+    <errorDisplayField>Number_of_Wheels__c</errorDisplayField>
+    <errorMessage>Number of wheels must be even</errorMessage>
+</ValidationRule>

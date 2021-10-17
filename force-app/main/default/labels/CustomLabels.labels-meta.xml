@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Bus_Details</fullName>
+        <categories>Fleet Dashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bus Details</shortDescription>
+        <value>Bus Details</value>
+    </labels>
+    <labels>
+        <fullName>Select_Record</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select Record</shortDescription>
+        <value>Select a Record to display details</value>
+    </labels>
+</CustomLabels>

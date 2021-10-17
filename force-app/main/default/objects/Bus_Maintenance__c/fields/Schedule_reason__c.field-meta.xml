@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Schedule_reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Schedule reason</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Brake</fullName>
+                <default>false</default>
+                <label>Brake</label>
+            </value>
+            <value>
+                <fullName>Engine</fullName>
+                <default>false</default>
+                <label>Engine</label>
+            </value>
+            <value>
+                <fullName>Fluid</fullName>
+                <default>false</default>
+                <label>Fluid</label>
+            </value>
+            <value>
+                <fullName>Oil Tank</fullName>
+                <default>false</default>
+                <label>Oil Tank</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Tyre</fullName>
+                <default>false</default>
+                <label>Tyre</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

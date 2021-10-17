@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Current Status --></label>
+    <name>Current_Status__c</name>
+    <picklistValues>
+        <masterLabel>Maintenance</masterLabel>
+        <translation><!-- Maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ready For Use</masterLabel>
+        <translation><!-- Ready For Use --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Undergoing Repairs</masterLabel>
+        <translation><!-- Undergoing Repairs --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

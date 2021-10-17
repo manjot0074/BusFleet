@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Bus</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Buses</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Number of wheels must be even --></errorMessage>
+        <name>Wheels_are_Even</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Year value should be between 1950 and current year --></errorMessage>
+        <name>Year_is_Correct</name>
+    </validationRules>
+</CustomObjectTranslation>

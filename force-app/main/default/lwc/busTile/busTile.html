@@ -1,0 +1,12 @@
+<template>
+    <div onclick={selectBus} class={tileBorderClass} >
+        <template if:true={imageSrc}>
+            <img src={imageSrc}/>
+        </template>
+        <template if:false={imageSrc}>
+            <div class="noImage">
+                {busData.busRecord.Name}
+            </div>
+        </template>
+    </div>
+</template>

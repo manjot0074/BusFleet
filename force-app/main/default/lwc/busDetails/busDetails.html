@@ -1,0 +1,25 @@
+<template>
+    <div class="slds-page-header__title">{label.headingLabel}</div>
+    <template if:true={recordId}>
+        <div class="busdisplay slds-m-left_x-small slds-p-around_small slds-m-top_small">
+            <lightning-record-form 
+                record-id = {recordId}
+                object-api-name = "Bus__c"
+                layout-type="Full">
+            </lightning-record-form>
+        </div>
+        <div class="resaleField slds-m-left_x-small slds-p-around_small slds-m-vertical_small">
+            <lightning-record-view-form
+                record-id = {recordId}
+                object-api-name = "Bus__c">
+                    <lightning-output-field
+                        field-name={resaleField}>
+                    </lightning-output-field>
+            </lightning-record-view-form> 
+        </div>
+    </template>
+        
+    <template if:false={recordId}> 
+        <div class="slds-m-left_x-small">{label.selectRecord}</div>
+    </template>
+</template>
