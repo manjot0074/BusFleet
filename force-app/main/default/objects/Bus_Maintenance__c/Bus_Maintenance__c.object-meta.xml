@@ -161,8 +161,9 @@
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <label>Bus Maintenance</label>
     <nameField>
-        <label>Bus  Name</label>
-        <type>Text</type>
+        <displayFormat>BM-{0000000000}</displayFormat>
+        <label>Bus Maintenance</label>
+        <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Bus Maintenances</pluralLabel>
     <searchLayouts/>
