@@ -82,11 +82,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Bus_Maintenance__c.Tire_conditions__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Bus_Maintenance__c.Tyre_Conditions__c</field>
         <readable>true</readable>
