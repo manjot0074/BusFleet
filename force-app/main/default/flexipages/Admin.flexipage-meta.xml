@@ -3,13 +3,13 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>fleetManagement</componentName>
+                <componentName>adminComponent</componentName>
             </componentInstance>
         </itemInstances>
         <name>main</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>Test</masterLabel>
+    <masterLabel>Admin</masterLabel>
     <template>
         <name>flexipage:defaultAppHomeTemplate</name>
     </template>

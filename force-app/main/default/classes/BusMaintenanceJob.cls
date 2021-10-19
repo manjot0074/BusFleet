@@ -1,5 +1,10 @@
-global with sharing class BusMaintenanceJob implements Database.Batchable<sobject>,Database.Stateful {
+global with sharing class BusMaintenanceJob implements Schedulable,Database.Batchable<sobject>,Database.Stateful {
     List<Garage__c> garages;
+    
+    global void execute(SchedulableContext sc){
+        Database.executeBatch(new BusMaintenanceJob());
+    }
+
     global Database.QueryLocator start(Database.BatchableContext BC){
         this.garages = [select id,Location__c from Garage__c WITH SECURITY_ENFORCED];
         return Database.getQueryLocator([select id,Location__c,Odometer_Reading__c from Bus__c where Miles_Since_Last_Maintenance__c > 5000 and Maximum_Capacity__c = '60' and Current_Status__c = 'Ready For Use' WITH SECURITY_ENFORCED]);

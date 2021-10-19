@@ -6,14 +6,6 @@
     </types>
     <types>
         <members>*</members>
-        <name>ApexPage</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTrigger</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
@@ -42,7 +34,7 @@
     </types>
     <types>
         <members>*</members>
-        <name>Translations</name>
+        <name>CustomApplication</name>
     </types>
     <version>52.0</version>
 </Package>
