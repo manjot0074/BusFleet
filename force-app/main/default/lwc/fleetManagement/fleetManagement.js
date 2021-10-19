@@ -38,6 +38,10 @@ export default class FleetManagement extends LightningElement {
         this.selectedBus = event.detail.busId;
     }
 
+    get noBuses(){
+        return this.totalCount === 0;
+    }
+
     get paginationMsg(){
         return labelFormat(paginationMessage,
             ((this.pageNumber - 1) * this.pageSize) + 1,

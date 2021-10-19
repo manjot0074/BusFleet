@@ -7,5 +7,6 @@
 4. use sfdx force:force:deploy -p force-app to deploy code to developer org.
 
 # If you have a DevHub Org
-1. run createorg.sh file
+1. Clone this repository
+2. Run createorg.sh file
 

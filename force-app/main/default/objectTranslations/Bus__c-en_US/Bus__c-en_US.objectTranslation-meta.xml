@@ -8,6 +8,13 @@
         <plural>true</plural>
         <value>Buses</value>
     </caseValues>
+    <layouts>
+        <layout>Bus Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
     <validationRules>
         <errorMessage><!-- Odometer reading cann&apos;t be less than Last Maintenance Odometer Reading --></errorMessage>
