@@ -13,7 +13,8 @@
                     <lightning-button disabled={isPreviousDisabled} variant="brand" label="Previous" onclick={handlePrev}></lightning-button>            
                     <lightning-button disabled={isNextDisabled} variant="brand" label="Next" class="slds-m-left_small" onclick={handleNext}></lightning-button>
                 </div>
-                <p class="slds-text-heading_small">{recordStart}-{recordEnd} of {totalCount} | Page {pageNumber} of {totalPages}</p>
+                <p class="slds-text-heading_small">{paginationMsg}</p>
+                <!--{recordStart}-{recordEnd} of {totalCount} | Page {pageNumber} of {totalPages}-->
             </div>
         </div>
         <div class="slds-col slds-size_1-of-3">

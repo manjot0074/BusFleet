@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Odometer_readings_are_correct</fullName>
+    <active>true</active>
+    <errorConditionFormula>Odometer_Reading__c &lt;  Last_Maintenance_Odometer_Reading__c</errorConditionFormula>
+    <errorMessage>Odometer reading cann&apos;t be less than Last Maintenance Odometer Reading</errorMessage>
+</ValidationRule>

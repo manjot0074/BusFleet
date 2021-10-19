@@ -36,6 +36,11 @@
                 <label>Other</label>
             </value>
             <value>
+                <fullName>Scheduled Maintenance</fullName>
+                <default>false</default>
+                <label>Scheduled Maintenance</label>
+            </value>
+            <value>
                 <fullName>Tyre</fullName>
                 <default>false</default>
                 <label>Tyre</label>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label><!-- test --></label>
-    <name>test__c</name>
+    <label><!-- Last Maintenance Odometer Reading --></label>
+    <name>Last_Maintenance_Odometer_Reading__c</name>
 </CustomFieldTranslation>

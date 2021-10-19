@@ -23,6 +23,10 @@
         <translation><!-- Other --></translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>Scheduled Maintenance</masterLabel>
+        <translation><!-- Scheduled Maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Tyre</masterLabel>
         <translation><!-- Tyre --></translation>
     </picklistValues>

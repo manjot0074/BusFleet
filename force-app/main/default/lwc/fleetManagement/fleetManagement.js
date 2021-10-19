@@ -1,9 +1,13 @@
 import { LightningElement,track } from 'lwc';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 
+import {labelFormat} from 'c/utility';
+
 import getNextBuses from '@salesforce/apex/BusController.getNextBuses';
 import getPrevBuses from '@salesforce/apex/BusController.getPrevBuses';
 import getTotalCount from '@salesforce/apex/BusController.getTotalCount';
+
+import paginationMessage from '@salesforce/label/c.Pagination_Message';
 
 export default class FleetManagement extends LightningElement {
 
@@ -34,6 +38,15 @@ export default class FleetManagement extends LightningElement {
         this.selectedBus = event.detail.busId;
     }
 
+    get paginationMsg(){
+        return labelFormat(paginationMessage,
+            ((this.pageNumber - 1) * this.pageSize) + 1,
+            this.pageNumber * this.pageSize,
+            this.totalCount,
+            this.pageNumber,
+            (this.totalCount%this.pageSize == 0 ? this.totalCount/this.pageSize : Math.floor(this.totalCount/this.pageSize) +1)
+        );
+    }
     get isPreviousDisabled(){
         return this.pageNumber === 1;
     }
@@ -44,14 +57,6 @@ export default class FleetManagement extends LightningElement {
 
     get totalPages(){
         return (this.totalCount%this.pageSize == 0 ? this.totalCount/this.pageSize : Math.floor(this.totalCount/this.pageSize) +1);
-    }
-
-    get recordStart(){
-        return ((this.pageNumber - 1) * this.pageSize) + 1;
-    }
-
-    get recordEnd(){
-        return this.pageNumber * this.pageSize;
     }
 
     handlePrev(){

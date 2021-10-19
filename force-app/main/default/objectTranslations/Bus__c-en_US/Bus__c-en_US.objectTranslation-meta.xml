@@ -10,6 +10,10 @@
     </caseValues>
     <startsWith>Consonant</startsWith>
     <validationRules>
+        <errorMessage><!-- Odometer reading cann&apos;t be less than Last Maintenance Odometer Reading --></errorMessage>
+        <name>Odometer_readings_are_correct</name>
+    </validationRules>
+    <validationRules>
         <errorMessage><!-- Number of wheels must be even --></errorMessage>
         <name>Wheels_are_Even</name>
     </validationRules>

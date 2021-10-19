@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label><!-- Tire conditions --></label>
-    <name>Tire_conditions__c</name>
+    <label><!-- Tyre Conditions --></label>
+    <name>Tyre_Conditions__c</name>
     <picklistValues>
         <masterLabel>High Wear</masterLabel>
         <translation><!-- High Wear --></translation>
