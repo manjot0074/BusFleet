@@ -1,0 +1,18 @@
+.tileClass {
+    border: 3px solid grey;
+    border-radius: 5px;
+    height: 250px;
+    cursor: pointer;
+}
+.selectedTileClass {
+    border: 3px solid blue;
+    border-radius: 5px;
+    height: 250px;
+    cursor: pointer;
+}
+.noImage{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 244px;
+    background: rgb(238, 244, 255);
+}

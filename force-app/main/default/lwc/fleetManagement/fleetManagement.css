@@ -1,0 +1,7 @@
+.color{
+    background-color: white;
+}
+.gridScroll{
+    height : 730px;
+    overflow: scroll;
+}

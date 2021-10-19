@@ -1,0 +1,33 @@
+<template>
+    
+    <div class="slds-grid slds-gutters color slds-m-horizontal_xxx-small">
+        <template if:false={noBuses}>
+            <div class="slds-col slds-size_2-of-3">
+                <lightning-layout class="gridScroll" horizontal-align="center" multiple-rows>
+                    <template for:each={buses} for:item="bus">
+                        <lightning-layout-item key={bus.busRecord.Id} padding="around-small" size="12" small-device-size="6" medium-device-size="4" large-device-size="3">
+                            <c-bus-tile bus-data={bus} onbusselect={selectBus} selected-bus-id={selectedBus}></c-bus-tile>
+                        </lightning-layout-item>
+                    </template>
+                </lightning-layout>
+                <div class="slds-m-around_small">
+                    <div class="slds-float_right">            
+                        <lightning-button disabled={isPreviousDisabled} variant="brand" label="Previous" onclick={handlePrev}></lightning-button>            
+                        <lightning-button disabled={isNextDisabled} variant="brand" label="Next" class="slds-m-left_small" onclick={handleNext}></lightning-button>
+                    </div>
+                    <p class="slds-text-heading_small">{paginationMsg}</p>
+                    <!--{recordStart}-{recordEnd} of {totalCount} | Page {pageNumber} of {totalPages}-->
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+            <c-bus-details record-id={selectedBus}></c-bus-details>
+            </div>
+        </template>
+        <template if:true={noBuses}>
+            No Data is Available
+        </template>
+    </div>
+    <template if:true={isLoading}>
+        <lightning-spinner></lightning-spinner>
+    </template>
+</template>
